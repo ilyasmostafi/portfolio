@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title >My Portfolio</title>
     
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "2n9R_nrWHmE8CuMk-",
+      });
+   })();
+</script>
 </head>
 <body>
     
     <header class="header">
-        <a href="#" class="logo" >portfolio</a>
+        <a href="#" class="logo" style="color: #59B2F4;" >portfolio</a>
         <i class="fa-solid fa-bars" id="menu-icon"></i>
         <div class="navbar">
             <a href="#home" class="active" >Home</a>
@@ -23,40 +33,39 @@
     </header>
 
     <section class="home" id="home">
-            <div id="home-content">
-                <h3>Hello,  </h3>
-                <h1>ilyas mostafi</h1>
-                <h3>and i'am a <span class="multiple-text">Full Stack Developer</span></h3>
-                <p>Experienced developer skilled in responsive desing for e-commerce platforms ,
-                     proven expertise <br> in crafting user-centric and scalable interactive web designs. </p>
+            <div id="home-content" >
+                <h1 style="font-size: 3vw;" >Hello, My Name Is   </h1>
+                <h1 style="font-size: 3vw;"  >Ilyas Mostafi</h1>
+                <h1 style="font-size: 3vw;">and i'am a <span class="multiple-text"></span></h1>
+                <p>
+                    
+Experienced Website Creation Developer skilled in crafting responsive designs for e-commerce platforms, with expertise in user-centric and scalable interactive web applications. Thrives in creating seamless experiences driving engagement and delivering results. </p>
                 
                 <div class="social-media">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                     <a href=""><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
-                <a href="#" class="btn"> Download cv </a>
+                <a href="cv.pdf" class="btn"> Download cv </a>
             </div>
             <div class="home-img">
-                <img src=""  alt="">
+                <img src="ark_x-490-removebg.png"  alt="">
             </div>
     </section>
 
 
 
     <section id="about" class="about">
+            <div class="about-img">
+                <img src="ark_x-487-removebg-preview (1)-fotor-202403191019.png" alt="">
+            </div>
             
             <div class="about-content">
                 <h2 class="heading"> ABOUT <span>Me</span></h2>
-                <h3>Full Stack Developer</h3>
-                <p>Hi, I'm Ilyas Mostafi, a seasoned developer specializing in responsive design for e-commerce platforms. With years of experience under my belt, I bring a wealth of knowledge and expertise to the table.
-
-                    My passion lies in creating captivating and user-centric web designs that not only look great but also function flawlessly across various devices. From conceptualization to implementation, I take pride in crafting seamless and scalable solutions that elevate the online shopping experience.
-                    
-                    Driven by a relentless pursuit of excellence, I thrive on staying up-to-date with the latest technologies and best practices in web development. Whether it's optimizing performance, enhancing user engagement, or tackling complex challenges, I'm committed to delivering results that exceed expectations.
-                    
-                    Welcome to my corner of the web, where innovation meets creativity, and every line of code tells a story. Let's connect and explore how we can bring your vision to life.</p>
+                <h3><span class="multiple-text"></span></h3>
+                
+                <p>As a dedicated full-stack MERN (MongoDB, Express.js, React.js, Node.js) developer currently enrolled in the Job Intech program, I am passionate about leveraging technology to create innovative solutions. With a strong foundation in both front-end and back-end development, I thrive on tackling complex challenges and transforming ideas into reality. My internship experience at Arkx has provided me with invaluable hands-on experience, allowing me to further enhance my skills and gain practical insights into the industry. I am committed to continuous learning and growth, eager to contribute my expertise and enthusiasm to projects that make a meaningful impact.</p>
                 <a href="#" class="btn">Read more</a>
             </div>
     </section>
@@ -66,64 +75,38 @@
         <h2 class="heading">Latest <span>Projects</span></h2>
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="1.jpg" alt="">
+                <img src="1.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>web design</h4>
-                    <p>lorem</p>
-                    <i class="fa-solid fa-share-from-square"></i>
+                    <h4>Hospital Management</h4>
+                    <i class="fa-brands fa-github">
+                    </i> 
 
                 </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="2.jpg" alt="">
+                <img src="2.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>web design</h4>
-                    <p>lorem</p>
-                    <i class="fa-solid fa-share-from-square"></i>
+                    <h4>Library management</h4>
+                    <i class="fa-brands fa-github">
+                    </i> 
 
                 </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="3.jpg" alt="">
+               
+                <img src="3.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>web design</h4>
-                    <p>lorem</p>
-                    <i class="fa-solid fa-share-from-square"></i>
-
+                    
+                    <h4>Affiliate sites</h4>
+                    <i class="fa-brands fa-github">
+                    </i> 
                 </div>
             </div>
+            
+           
 
-            <div class="portfolio-box">
-                <img src="4.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>web design</h4>
-                    <p>lorem</p>
-                    <i class="fa-solid fa-share-from-square"></i>
-
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="5.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>web design</h4>
-                    <p>lorem</p>
-                    <i class="fa-solid fa-share-from-square"></i>
-
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="6.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>web design</h4>
-                    <p>lorem</p>
-                    <i class="fa-solid fa-share-from-square"></i>
-
-                </div>
-            </div>
         </div>
     </section>
 
@@ -133,19 +116,16 @@
 
         <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" id="name" placeholder="Full Name">
+                <input type="email" id="email" placeholder="Email Address">
             </div>
 
-            <div class="input-box">
-                <input type="tel" placeholder="mobile number">
-                <input type="text" placeholder="Email subject">
-            </div>
+            
 
-            <textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea>
+            <textarea name="" id="" cols="30" id="message" rows="10" placeholder="your message"></textarea>
             
            
-            <input type="submit" value="send message" class="btn">
+            <input style="text-align: center;" value="send message" class="btn">
         </form>
     </section>
 
@@ -169,6 +149,6 @@
 
 
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
 </body>
 </html>

@@ -56,15 +56,24 @@ ScrollReveal().reveal('.home-img , portfolio-box , contact form ' ,{origin : 'bu
 ScrollReveal().reveal('.home-contact h1 , .about-img ' ,{origin : 'left'});
 ScrollReveal().reveal('.home-contact p , about-content ' ,{origin : 'right'});
 
-const typed = new typed('.multiple-text' , {
-    String : ['Full Stack Developer' , 'Front-end Developer' , 'Back-end Devloper'],
-    
-    backSpeed : 70,
-    typedSpeed : 70,
-    backDelay : 1000 ,
-    loop : true ,
+const typed = new Typed('.multiple-text', {
+    strings: ['Full Stack Developer'],
+    typeSpeed: 70,    // Vitesse à laquelle le texte est tapé (en millisecondes par caractère)
+    backSpeed: 70,    // Vitesse à laquelle le texte est effacé (en millisecondes par caractère)
+    backDelay: 1000,  // Délai avant de commencer à effacer le texte (en millisecondes)
+    loop: true        // Indique si l'animation doit être en boucle ou non
+});
 
-})
+function sendmail()
+{
+    let params  = {
+        name : document.getElementById("name").value,
+        email : document.getElementById("email").value,
+        message : document.getElementById("message").value,
+
+    }
+    emailjs.send("service_z6rdmvi" , "template_06a79i1" ,params).then(alert("done"))
+}
 
 
 
